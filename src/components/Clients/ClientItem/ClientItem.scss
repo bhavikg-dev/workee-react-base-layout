@@ -1,0 +1,174 @@
+.clientItem {
+    background-color: #F4F5F4;
+    border: 1px solid #F4F5F4;
+    border-radius: 5px;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+
+    @media only screen and (max-width: 575px) {
+        display: block;
+    }
+
+    .clientImage {
+        width: 33%;
+
+        @media only screen and (max-width: 575px) {
+            width: 100%;
+        }
+
+        .photo {
+            height: 32px;
+            width: 32px;
+            border-radius: 5px;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .clientName {
+            font-weight: 600;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 16px;
+            vertical-align: middle;
+            font-family: 'Work Sans', sans-serif;
+        }
+    }
+
+    .clientEmail {
+        width: 35%;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Inter', sans-serif;
+
+        @media only screen and (max-width: 575px) {
+            width: 100%;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 3px 0px;
+        }
+    }
+
+    .clientInfo {
+        width: 25%;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+        font-family: 'Inter', sans-serif;
+
+        @media only screen and (max-width: 575px) {
+            width: 70%;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 3px 0px;
+        }
+
+        .new {
+            border: 1px solid #00B278;
+            border-radius: 5px;
+            color: #00B278;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            padding: 0px 5px;
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+
+            @media only screen and (max-width: 575px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .clientAction {
+        width: 6%;
+
+        @media only screen and (max-width: 575px) {
+            width: 30%;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: right;
+            padding: 3px 0px;
+        }
+
+        .hoverAction {
+            display: none;
+
+            @media only screen and (max-width: 575px) {
+                display: block;
+            }
+        }
+    }
+
+    &:hover {
+        transition: 0.5s ease-in-out all;
+        -webkit-transition: 0.5s ease-in-out all;
+        -ms-transition: 0.5s ease-in-out all;
+        -moz-transition: 0.5s ease-in-out all;
+        -o-transition: 0.5s ease-in-out all;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25);
+
+        .clientAction {
+            width: 6%;
+            text-align: right;
+            transition: 0.5s ease-in-out all;
+            -webkit-transition: 0.5s ease-in-out all;
+            -ms-transition: 0.5s ease-in-out all;
+            -moz-transition: 0.5s ease-in-out all;
+            -o-transition: 0.5s ease-in-out all;
+
+            @media only screen and (max-width: 575px) {
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: right;
+            }
+
+            .hoverAction {
+                display: block;
+                transition: 0.5s ease-in-out all;
+                -webkit-transition: 0.5s ease-in-out all;
+                -ms-transition: 0.5s ease-in-out all;
+                -moz-transition: 0.5s ease-in-out all;
+                -o-transition: 0.5s ease-in-out all;
+
+                .editAction {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #9DA0A2;
+
+                    @media only screen and (max-width: 575px) {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    &:hover {
+                        color: #000000;
+                        transition: 0.5s ease-in-out all;
+                        -webkit-transition: 0.5s ease-in-out all;
+                        -ms-transition: 0.5s ease-in-out all;
+                        -moz-transition: 0.5s ease-in-out all;
+                        -o-transition: 0.5s ease-in-out all;
+                    }
+                }
+            }
+        }
+    }
+}
